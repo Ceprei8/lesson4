@@ -1,7 +1,3 @@
-// УРОК 4. track.js — оживление страницы «Отслеживание доставки».
-// Код собран ровно по «Заметкам дня 4: Отслеживание доставки» (блоки 1–4).
-
-// 1. Поиск элементов и создание переменных
 // Переменные, нужные для работы функционала
 const trackButton = document.getElementById('trackButton');
 const trackResult = document.getElementById('trackResult');
@@ -11,7 +7,6 @@ const trackFromValue = document.getElementById('trackFromValue');
 const trackToValue = document.getElementById('trackToValue');
 const trackStatusList = document.getElementById('trackStatusList');
 
-// 2. Создаем обработчик кнопки «Отследить»
 // Основной обработчик кнопки "Отследить"
 trackButton.addEventListener('click', () => {
     if (!trackNumber.value || trackNumber.value === '') {
@@ -55,7 +50,6 @@ trackButton.addEventListener('click', () => {
     renderStatuses(response.statuses);
 });
 
-// 3. Отображение статусов по отправлению
 // Рендерим список статусов в ленте
 function renderStatuses(statuses) {
     // Очищаем список
